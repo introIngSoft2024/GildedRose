@@ -1,11 +1,14 @@
 package com.gildedrose.refactored;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Nested;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Unit tests for the Gilded Rose project
+ *
+ * @author Antonio J. Nebro
+ */
 @DisplayName(("The Gilded Rose"))
 class GildedRoseTest {
 
@@ -27,7 +30,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(quality + 1, newQuality);
     }
 
@@ -44,7 +47,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(quality + 2, newQuality);
     }
 
@@ -61,7 +64,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(quality, newQuality);
     }
 
@@ -78,7 +81,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(quality, newQuality);
     }
 
@@ -95,7 +98,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newSellIn = item.getSellIn();
+      int newSellIn = item.sellIn;
       assertEquals(sellIn - 1, newSellIn);
     }
 
@@ -112,7 +115,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newSellIn = item.getSellIn();
+      int newSellIn = item.sellIn;
       assertEquals(sellIn - 1, newSellIn);
     }
   }
@@ -135,7 +138,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(quality + 1, newQuality);
     }
 
@@ -152,7 +155,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(quality + 2, newQuality);
     }
 
@@ -169,7 +172,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(quality + 2, newQuality);
     }
 
@@ -186,7 +189,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(quality + 3, newQuality);
     }
 
@@ -203,7 +206,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(quality + 3, newQuality);
     }
 
@@ -220,7 +223,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(0, newQuality);
     }
   }
@@ -243,7 +246,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(quality, newQuality);
     }
 
@@ -260,7 +263,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newSellIn = item.getSellIn();
+      int newSellIn = item.sellIn;
       assertEquals(sellIn, newSellIn);
     }
   }
@@ -283,7 +286,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(quality - 1, newQuality);
     }
 
@@ -300,7 +303,7 @@ class GildedRoseTest {
       gildedRose.updateQuality();
 
       // Assert
-      int newQuality = item.getQuality();
+      int newQuality = item.quality;
       assertEquals(quality - 2, newQuality);
     }
   }
